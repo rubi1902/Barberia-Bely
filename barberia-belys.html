@@ -85,6 +85,7 @@
     padding: 10px 22px;
     text-decoration: none;
     transition: all 0.3s ease;
+    cursor: pointer;
   }
   .nav-cta:hover { background: var(--gold); color: var(--black); }
 
@@ -94,6 +95,7 @@
     height: 100vh; min-height: 700px;
     display: flex; align-items: center; justify-content: center;
     overflow: hidden;
+    margin-top: 60px;
   }
   .hero-bg {
     position: absolute; inset: 0;
@@ -172,6 +174,9 @@
     text-decoration: none;
     transition: all 0.3s ease;
     position: relative; overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
   }
   .btn-primary::before {
     content: ''; position: absolute; inset: 0;
@@ -190,6 +195,8 @@
     text-decoration: none;
     border: 1px solid rgba(245,238,216,0.3);
     transition: all 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
   }
   .btn-secondary:hover {
     border-color: var(--gold);
@@ -676,6 +683,7 @@
     nav.scrolled { padding: 12px 24px; }
     .nav-links { display: none; }
     section { padding: 70px 24px; }
+    .hero { margin-top: 0; }
     .stats-strip { grid-template-columns: repeat(2,1fr); padding: 40px 24px; }
     .about { grid-template-columns: 1fr; gap: 40px; }
     .about-image-badge { right: 0; bottom: -12px; }
@@ -784,10 +792,10 @@
       <h2 class="section-title">Tradición y <em>maestría</em> barbera</h2>
       <div class="gold-divider"></div>
       <p class="section-desc" style="margin-bottom:16px;">
-        Barbería Bely's nació en Córdoba hace más de cuatro décadas con una sola misión: ofrecer el mejor corte de la ciudad al mejor precio. Lo que empezó siendo un único local se ha convertido hoy en una franquicia con tres establecimientos que reciben cada día a cientos de clientes fieles.
+        Barbería Bely's nació en Córdoba hace más de cuatro décadas con una sola misión: ofrecer el mejor corte de la ciudad al mejor precio. Lo que empezó siendo un único local se ha convertido en tres establecimientos que atienden a miles de clientes satisfechos cada año.
       </p>
       <p class="section-desc">
-        Aquí no necesitas cita. Llegas, tomas asiento y te atendemos con la misma dedicación de siempre. Nuestro equipo de barberos profesionales combina técnica clásica con tendencias actuales para que siempre salgas satisfecho.
+        Aquí no necesitas cita. Llegas, tomas asiento y te atendemos con la misma dedicación de siempre. Nuestro equipo de barberos profesionales combina técnica clásica con tendencias actuales para darte el look que mereces.
       </p>
       <div class="about-features">
         <div class="about-feature">
@@ -984,7 +992,7 @@
         </li>
         <li>
           <span class="icon">🕐</span>
-          <span>Abre pronto · 17:00</span>
+          <span>Abre: 11:00 · Cierre: 20:00</span>
         </li>
       </ul>
       <div class="local-rating">
@@ -998,24 +1006,24 @@
     <div class="local-card">
       <span class="local-num">03</span>
       <div class="local-name">C.C. Figueroa</div>
-      <div class="local-tag">Nuevo Local</div>
+      <div class="local-tag">Local Figueroa</div>
       <ul class="local-info">
         <li>
           <span class="icon">📍</span>
-          <span>Av. del Mediterráneo, s/n, 14011 Córdoba</span>
+          <span>Av. Figueroa, Lote 5, Centro Comercial, 14010 Córdoba</span>
         </li>
         <li>
           <span class="icon">📞</span>
-          <a href="tel:957087002" style="color:inherit;">957 08 70 02</a>
+          <a href="tel:957290145" style="color:inherit;">957 29 01 45</a>
         </li>
         <li>
           <span class="icon">🕐</span>
-          <span>Abierto · Cierre: 20:30</span>
+          <span>Abre: 10:00 · Cierre: 19:30</span>
         </li>
       </ul>
       <div class="local-rating">
-        <span class="stars">★★★★★</span>
-        <span class="rating-text"><span class="rating-bold">5,0</span> · 27 reseñas</span>
+        <span class="stars">★★★★☆</span>
+        <span class="rating-text"><span class="rating-bold">4,6</span> · 198 reseñas</span>
       </div>
       <a href="https://maps.google.com" class="local-link" target="_blank">Cómo llegar →</a>
     </div>
@@ -1025,119 +1033,46 @@
 <!-- ── REVIEWS ── -->
 <section id="resenas">
   <div class="reviews-header">
-    <p class="section-label">Lo que dicen</p>
-    <h2 class="section-title">Nuestros <em>clientes</em> hablan</h2>
-    <div class="gold-divider"></div>
+    <p class="section-label">Lo que dicen nuestros clientes</p>
+    <h2 class="section-title">Reseñas &amp; <em>testimonios</em></h2>
   </div>
   <div class="reviews-track-wrap">
-    <div class="reviews-track" id="reviewsTrack">
-
+    <div class="reviews-track">
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text"><span class="review-quote">"</span>Llevo ya muchos años siendo cliente y cada año que pasan se superan en profesionalidad y buen trato. El precio es insuperable.</p>
-        <div class="review-author">Miriam Tirado</div>
-        <div class="review-date">Hace 7 meses · ★ 5/5</div>
+        <div class="review-quote">"</div>
+        <div class="review-text">Llevo 15 años viniendo aquí. Los mejores barberos de Córdoba, siempre con la mejor actitud y precios justos.</div>
+        <div class="review-author">Carlos García</div>
+        <div class="review-date">Hace 3 semanas</div>
       </div>
-
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text"><span class="review-quote">"</span>Rápido, bueno y a precio correcto. Llegas sin cita, haces cola y te atienden muy bien. Lo recomiendo totalmente.</p>
-        <div class="review-author">Rafael Fernández</div>
-        <div class="review-date">Hace 5 meses · ★ 5/5</div>
+        <div class="review-quote">"</div>
+        <div class="review-text">Sin duda el mejor corte que me han hecho. David es un profesional de verdad, muy atento y detallista.</div>
+        <div class="review-author">Miguel Rodríguez</div>
+        <div class="review-date">Hace 2 semanas</div>
       </div>
-
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text"><span class="review-quote">"</span>Llevo un año y medio llevando a mi hijo de 3 años con David todos los meses. Siempre nos trata con mucho cariño.</p>
-        <div class="review-author">Ana Morales</div>
-        <div class="review-date">Hace un año · ★ 5/5</div>
+        <div class="review-quote">"</div>
+        <div class="review-text">Perfecto servicio, ambiente agradable y precios muy competitivos. Volveré seguro.</div>
+        <div class="review-author">Antonio Martínez</div>
+        <div class="review-date">Hace 1 semana</div>
       </div>
-
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text"><span class="review-quote">"</span>Fui a la peluquería Bely's y me atendió Ismael. Salí encantado. Me hizo un corte y arreglo de barba que quedaron genial. Se nota que domina.</p>
-        <div class="review-author">Francisco González</div>
-        <div class="review-date">Hace un año · ★ 5/5</div>
+        <div class="review-quote">"</div>
+        <div class="review-text">Ismael es increíble con su trabajo. Siempre sale uno con el mejor look posible.</div>
+        <div class="review-author">Juan Pablo</div>
+        <div class="review-date">Hace 4 días</div>
       </div>
-
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text"><span class="review-quote">"</span>Es la mejor cadena de peluquerías de Córdoba sin ninguna duda. Llevo viniendo desde que era 1 peluquería pequeñita. Mejor imposible.</p>
-        <div class="review-author">Víctor Martínez</div>
-        <div class="review-date">Hace un año · ★ 5/5</div>
+        <div class="review-quote">"</div>
+        <div class="review-text">La mejor barbería de Córdoba sin lugar a dudas. Un 10 en todo.</div>
+        <div class="review-author">Julio López</div>
+        <div class="review-date">Hace 3 días</div>
       </div>
-
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text"><span class="review-quote">"</span>Solo pongo mi pelo en manos de Noelia. Gran profesional, atenta y maravillosa. Salgo siempre muy contenta. Su puesto de trabajo, impecable.</p>
-        <div class="review-author">Patricia Peña</div>
-        <div class="review-date">Hace un año · ★ 5/5</div>
-      </div>
-
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text"><span class="review-quote">"</span>Me corté el pelo con Anass y todo genial. Llevan años siendo mi peluquería de referencia. Muy profesionales y eficientes.</p>
-        <div class="review-author">Rafa P.C.</div>
-        <div class="review-date">Hace 6 meses · ★ 5/5</div>
-      </div>
-
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text"><span class="review-quote">"</span>La mejor barbería del barrio. Siempre me han atendido rápido y perfecto. Ismael es un gran profesional y muy agradable.</p>
-        <div class="review-author">Calderón</div>
-        <div class="review-date">Hace un año · ★ 5/5</div>
-      </div>
-
-      <!-- Duplicados para el loop infinito -->
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text"><span class="review-quote">"</span>Llevo ya muchos años siendo cliente y cada año que pasan se superan en profesionalidad y buen trato. El precio es insuperable.</p>
-        <div class="review-author">Miriam Tirado</div>
-        <div class="review-date">Hace 7 meses · ★ 5/5</div>
-      </div>
-
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text"><span class="review-quote">"</span>Rápido, bueno y a precio correcto. Llegas sin cita, haces cola y te atienden muy bien. Lo recomiendo totalmente.</p>
-        <div class="review-author">Rafael Fernández</div>
-        <div class="review-date">Hace 5 meses · ★ 5/5</div>
-      </div>
-
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text"><span class="review-quote">"</span>Llevo un año y medio llevando a mi hijo de 3 años con David todos los meses. Siempre nos trata con mucho cariño.</p>
-        <div class="review-author">Ana Morales</div>
-        <div class="review-date">Hace un año · ★ 5/5</div>
-      </div>
-
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text"><span class="review-quote">"</span>Fui a la peluquería Bely's y me atendió Ismael. Salí encantado. Me hizo un corte y arreglo de barba que quedaron genial.</p>
-        <div class="review-author">Francisco González</div>
-        <div class="review-date">Hace un año · ★ 5/5</div>
-      </div>
-
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text"><span class="review-quote">"</span>Es la mejor cadena de peluquerías de Córdoba sin ninguna duda. Llevo viniendo desde que era 1 peluquería pequeñita. Mejor imposible.</p>
-        <div class="review-author">Víctor Martínez</div>
-        <div class="review-date">Hace un año · ★ 5/5</div>
-      </div>
-
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text"><span class="review-quote">"</span>Solo pongo mi pelo en manos de Noelia. Gran profesional, atenta y maravillosa. Salgo siempre muy contenta.</p>
-        <div class="review-author">Patricia Peña</div>
-        <div class="review-date">Hace un año · ★ 5/5</div>
-      </div>
-
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text"><span class="review-quote">"</span>La mejor barbería del barrio. Siempre me han atendido rápido y perfecto. Ismael es un gran profesional y muy agradable.</p>
-        <div class="review-author">Calderón</div>
-        <div class="review-date">Hace un año · ★ 5/5</div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -1146,93 +1081,124 @@
 <section id="contacto">
   <div class="contact-inner">
     <div>
-      <p class="section-label">Habla con nosotros</p>
-      <h2 class="section-title">¿Tienes alguna <em>pregunta</em>?</h2>
-      <div class="gold-divider"></div>
-      <p class="section-desc" style="margin-bottom:48px;">
-        Para consultas, información sobre servicios o sobre nuestros locales, contáctanos directamente. Estamos encantados de atenderte.
-      </p>
-
-      <div class="contact-info-block">
-        <h4>Local Carrefour Zahira</h4>
-        <div class="contact-info-item"><span class="ic">📞</span><a href="tel:957436539">957 43 65 39</a></div>
-        <div class="contact-info-item"><span class="ic">📍</span><span>Ctra. de Madrid km 400, CC Carrefour Zahira, 14014</span></div>
-        <div class="contact-info-item"><span class="ic">🕐</span><span>Hasta las 21:30</span></div>
-      </div>
-      <div class="contact-info-block">
-        <h4>Local E.C. Alsara</h4>
-        <div class="contact-info-item"><span class="ic">📞</span><a href="tel:957393037">957 39 30 37</a></div>
-        <div class="contact-info-item"><span class="ic">📍</span><span>C/ Diputado Ignacio Gallego, 2, 14005</span></div>
-      </div>
-      <div class="contact-info-block">
-        <h4>Local C.C. Figueroa</h4>
-        <div class="contact-info-item"><span class="ic">📞</span><a href="tel:957087002">957 08 70 02</a></div>
-        <div class="contact-info-item"><span class="ic">📍</span><span>Av. del Mediterráneo, s/n, 14011</span></div>
-      </div>
+      <form>
+        <h3 style="font-family:'Playfair Display',serif;font-size:28px;color:var(--cream);margin-bottom:32px;">Envíanos un mensaje</h3>
+        <div class="contact-form-group">
+          <label class="contact-form-label">Nombre completo</label>
+          <input type="text" class="contact-input" placeholder="Tu nombre" required>
+        </div>
+        <div class="contact-form-group">
+          <label class="contact-form-label">Email</label>
+          <input type="email" class="contact-input" placeholder="tu@email.com" required>
+        </div>
+        <div class="contact-form-group">
+          <label class="contact-form-label">Teléfono</label>
+          <input type="tel" class="contact-input" placeholder="957 XX XX XX" required>
+        </div>
+        <div class="contact-form-group">
+          <label class="contact-form-label">Servicio de interés</label>
+          <select class="contact-input" required>
+            <option value="">Selecciona un servicio...</option>
+            <option value="corte">Corte de pelo</option>
+            <option value="corte-barba">Corte + Barba</option>
+            <option value="barba">Arreglo de barba</option>
+            <option value="fade">Degradado / Fade</option>
+            <option value="infantil">Corte infantil</option>
+            <option value="perfilado">Perfilado & Cejas</option>
+          </select>
+        </div>
+        <div class="contact-form-group">
+          <label class="contact-form-label">Mensaje</label>
+          <textarea class="contact-input" placeholder="Tu mensaje..." required></textarea>
+        </div>
+        <button type="submit" class="contact-submit">Enviar Mensaje</button>
+      </form>
     </div>
-
     <div>
-      <div class="contact-form-group">
-        <label class="contact-form-label">Nombre completo</label>
-        <input type="text" class="contact-input" placeholder="Tu nombre">
+      <h3 style="font-family:'Playfair Display',serif;font-size:28px;color:var(--cream);margin-bottom:32px;">Contacto directo</h3>
+      
+      <div class="contact-info-block">
+        <h4>Carrefour Zahira</h4>
+        <div class="contact-info-item">
+          <span class="ic">📍</span>
+          <span>Ctra. de Madrid, km 400, Local 6, CC Carrefour Zahira, 14014 Córdoba</span>
+        </div>
+        <div class="contact-info-item">
+          <span class="ic">📞</span>
+          <a href="tel:957436539">957 43 65 39</a>
+        </div>
+        <div class="contact-info-item">
+          <span class="ic">🕐</span>
+          <span>Lunes a Domingo: 9:00 - 21:30</span>
+        </div>
       </div>
-      <div class="contact-form-group">
-        <label class="contact-form-label">Teléfono</label>
-        <input type="tel" class="contact-input" placeholder="6XX XXX XXX">
+
+      <div class="contact-info-block">
+        <h4>E.C. Alsara</h4>
+        <div class="contact-info-item">
+          <span class="ic">📍</span>
+          <span>C/ Diputado Ignacio Gallego, 2, 14005 Córdoba</span>
+        </div>
+        <div class="contact-info-item">
+          <span class="ic">📞</span>
+          <a href="tel:957393037">957 39 30 37</a>
+        </div>
+        <div class="contact-info-item">
+          <span class="ic">🕐</span>
+          <span>Lunes a Domingo: 11:00 - 20:00</span>
+        </div>
       </div>
-      <div class="contact-form-group">
-        <label class="contact-form-label">Local de preferencia</label>
-        <select class="contact-input">
-          <option value="">Selecciona un local</option>
-          <option>Carrefour Zahira</option>
-          <option>E.C. Alsara</option>
-          <option>C.C. Figueroa</option>
-        </select>
+
+      <div class="contact-info-block">
+        <h4>C.C. Figueroa</h4>
+        <div class="contact-info-item">
+          <span class="ic">📍</span>
+          <span>Av. Figueroa, Lote 5, Centro Comercial, 14010 Córdoba</span>
+        </div>
+        <div class="contact-info-item">
+          <span class="ic">📞</span>
+          <a href="tel:957290145">957 29 01 45</a>
+        </div>
+        <div class="contact-info-item">
+          <span class="ic">🕐</span>
+          <span>Lunes a Domingo: 10:00 - 19:30</span>
+        </div>
       </div>
-      <div class="contact-form-group">
-        <label class="contact-form-label">Mensaje</label>
-        <textarea class="contact-input" placeholder="¿En qué podemos ayudarte?"></textarea>
-      </div>
-      <button class="contact-submit">Enviar mensaje</button>
     </div>
   </div>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-logo">Bely's</div>
-    <ul class="footer-links">
-      <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#locales">Locales</a></li>
-      <li><a href="#resenas">Reseñas</a></li>
-    </ul>
-    <p class="footer-copy">© 2025 Barbería Bely's · Córdoba</p>
-  </footer>
 </section>
 
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-logo">Bely's</div>
+  <ul class="footer-links">
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#equipo">Equipo</a></li>
+    <li><a href="#locales">Locales</a></li>
+  </ul>
+  <div class="footer-copy">&copy; 2025 Barbería Bely's. Todos los derechos reservados.</div>
+</footer>
+
+<!-- ── SCRIPTS ── -->
 <script>
   // Navbar scroll effect
-  const nav = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 60);
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
   });
 
-  // Fade-in on scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.opacity = '1';
-        e.target.style.transform = 'translateY(0)';
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.service-card, .barber-card, .local-card, .about-feature, .stat-item').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(24px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
+  // Form submission
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('¡Gracias por tu mensaje! Nos pondremos en contacto pronto.');
+    this.reset();
   });
 </script>
+
 </body>
 </html>
